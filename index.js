@@ -116,7 +116,7 @@ document.getElementById("formulario").addEventListener("submit", function (event
         // var td = document.createElement("td")
         // tabla.insertRow
 
+        localStorage.setItem('presupuesto', JSON.stringify(presupuestos))
     }
 
 )
-document.getElementById("tablamuestra").innerHTML = ""
