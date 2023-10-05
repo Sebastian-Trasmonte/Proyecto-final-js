@@ -1,4 +1,4 @@
-export default class Presupuestos {
+export class Presupuestos {
     constructor(IdPresupuesto, RazonSocial, Cuit, Direccion, Cp, Localidad, Provincia, Tel, Email, Articulos) {
         this.IdPresupuesto = IdPresupuesto
         this.RazonSocial = RazonSocial
@@ -10,5 +10,15 @@ export default class Presupuestos {
         this.Tel = Tel
         this.Email = Email
         this.Articulos = Articulos
+    }
+}
+
+export class Articulo {
+    constructor(id, cod_corto, color, precio, cantidad) {
+        this.id = id
+        this.cod_corto = cod_corto
+        this.color = color
+        this.presio = precio
+        this.cantidad = cantidad
     }
 }
