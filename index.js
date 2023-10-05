@@ -1,5 +1,8 @@
-const articulos = [];
+import Presupuestos from "./clase"
 
+const articulos = [];
+var presupuestos = [];
+var ultimoIdPresupuesto = 1;
 
 async function cargarProductosJson() {
     await fetch("./articulos.json")
@@ -49,3 +52,12 @@ function MostrarPrecio() {
     document.getElementById("precio").innerHTML = "Precio unitario: $" + precio
 }
 
+document.getElementById("formulario").addEventListener("onsubmit", function () {
+    if (presupuestos.length > 0) {
+
+    }
+    else {
+        var presupuesto = new Presupuestos(ultimoIdPresupuesto,document.)
+    }
+}
+)

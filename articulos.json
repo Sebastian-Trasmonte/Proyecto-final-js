@@ -5,10 +5,10 @@
             "cod_corto": 1414,
             "modelo": "SLAK",
             "colores": [
-                "negro",
-                "marron",
-                "azul",
-                "blanco"
+                "NEGRO",
+                "MARRON",
+                "AZUL",
+                "BLANCO"
             ],
             "precio": 19071
         },
@@ -17,10 +17,10 @@
             "cod_corto": 1415,
             "modelo": "MADISON",
             "colores": [
-                "negro",
-                "marron",
-                "azul",
-                "blanco"
+                "NEGRO",
+                "MARRON",
+                "AZUL",
+                "BLANCO"
             ],
             "precio": 19071
         },
@@ -29,9 +29,9 @@
             "cod_corto": 500,
             "modelo": "PINTOS",
             "colores": [
-                "negro",
-                "marron",
-                "suela"
+                "NEGRO",
+                "MARRON",
+                "SUELA"
             ],
             "precio": 26916
         },
@@ -40,9 +40,9 @@
             "cod_corto": 505,
             "modelo": "NUKE",
             "colores": [
-                "negro",
-                "marron",
-                "suela"
+                "NEGRO",
+                "MARRON",
+                "SUELA"
             ],
             "precio": 26916
         },
@@ -51,13 +51,13 @@
             "cod_corto": 1922,
             "modelo": "PARIS",
             "colores": [
-                "rojo",
-                "azul",
-                "natal",
-                "gris",
-                "negro",
-                "marron",
-                "suela"
+                "ROJO",
+                "AZUL",
+                "NATAL",
+                "GRIS",
+                "NEGRO",
+                "MARRON",
+                "SUELA"
             ],
             "precio": 20535
         },
@@ -66,10 +66,10 @@
             "cod_corto": 2023,
             "modelo": "BRAK",
             "colores": [
-                "blanco",
-                "negro",
-                "suela",
-                "azul"
+                "BLANCO",
+                "NEGRO",
+                "SUELA",
+                "AZUL"
             ],
             "precio": 20535
         },
@@ -78,12 +78,12 @@
             "cod_corto": 1575,
             "modelo": "WOODY",
             "colores": [
-                "rojo",
-                "azul",
-                "suela",
-                "marron",
-                "negro",
-                "gris"
+                "ROJO",
+                "AZUL",
+                "SUELA",
+                "MARRON",
+                "NEGRO",
+                "GRIS"
             ],
             "precio": 24985
         },
@@ -92,9 +92,9 @@
             "cod_corto": 8000,
             "modelo": "MAX",
             "colores": [
-                "azul",
-                "blanco",
-                "negro"
+                "AZUL",
+                "BLANCO",
+                "NEGRO"
             ],
             "precio": 13777
         },
@@ -103,9 +103,9 @@
             "cod_corto": 8032,
             "modelo": "TALISMAN",
             "colores": [
-                "azul",
-                "blanco",
-                "negro"
+                "AZUL",
+                "BLANCO",
+                "NEGRO"
             ],
             "precio": 14019
         },
@@ -114,9 +114,9 @@
             "cod_corto": 8056,
             "modelo": "CELTA",
             "colores": [
-                "azul",
-                "blanco",
-                "negro"
+                "AZUL",
+                "BLANCO",
+                "NEGRO"
             ],
             "precio": 15454
         }
