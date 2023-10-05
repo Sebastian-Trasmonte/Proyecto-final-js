@@ -26,7 +26,7 @@ class Articulo {
 const articulos = [];
 var presupuestos = [];
 var ultimoIdPresupuesto = 0;
-var selectArts = [];
+
 
 async function cargarProductosJson() {
     await fetch("./articulos.json")
@@ -77,36 +77,46 @@ function MostrarPrecio() {
 }
 
 document.getElementById("formulario").addEventListener("submit", function (event) {
-    event.preventDefault()
-    const inputs = document.getElementById("formulario").elements;
-    var idArt = inputs["arts"].value
-    var precio = articulos.find((e) => e.id == idArt).precio
-    var articulo = new Articulo(
-        idArt,
-        inputs["arts"][inputs["arts"].selectedIndex].textContent,
-        inputs["color"][inputs["color"].selectedIndex].textContent,
-        precio,
-        inputs["cantidad"].value
-    )
-    if (selectArts.length > 0) {
-        selectArts.push(articulo)
-    }
-    else {
-        selectArts.push(articulo)
-        var presupuesto = new Presupuestos(
-            ultimoIdPresupuesto++,
-            inputs["razonsocial"].value,
-            inputs["cuit"].value,
-            inputs["direccion"].value,
-            inputs["cp"].value,
-            inputs["localidad"].value,
-            inputs["provincia"].value,
-            inputs["telefono"].value,
-            inputs["mail"].value,
-            selectArts)
-            
-        console.log(presupuesto)
+        event.preventDefault()
+        const inputs = document.getElementById("formulario").elements;
+        var idArt = inputs["arts"].value
+        var precio = articulos.find((e) => e.id == idArt).precio
+        var articulo = new Articulo(
+            idArt,
+            inputs["arts"][inputs["arts"].selectedIndex].textContent,
+            inputs["color"][inputs["color"].selectedIndex].textContent,
+            precio,
+            inputs["cantidad"].value
+        )
+        var presupuestocargado = presupuestos.find((e) => e.Cuit == inputs["cuit"].value)
+        if (presupuestocargado != undefined) {
+            presupuestocargado.Articulos.push(articulo);
+
+        } else {
+            var selectArts = [];
+            selectArts.push(articulo)
+            var presupuesto = new Presupuestos(
+                ultimoIdPresupuesto++,
+                inputs["razonsocial"].value,
+                inputs["cuit"].value,
+                inputs["direccion"].value,
+                inputs["cp"].value,
+                inputs["localidad"].value,
+                inputs["provincia"].value,
+                inputs["telefono"].value,
+                inputs["mail"].value,
+                selectArts)
+            presupuestos.push(presupuesto)
+        }
+        console.log(presupuestos)
+
+        // var divTabla = document.getElementById("tablamuestra")
+        // var tabla = document.createElement("table")
+        // var tr = document.createElement("tr")
+        // var td = document.createElement("td")
+        // tabla.insertRow
+
     }
 
-}
 )
+document.getElementById("tablamuestra").innerHTML = ""
